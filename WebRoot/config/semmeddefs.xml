@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemMedDefs>
+<Questions>
+	<Question value="0" key="What is the evidence that atherosclerosis begins in childhood?"/>
+	<Question value="1" key="What is the evidence that the presence of obesity in childhood affects the development and progression of atherosclerosis during childhood?"/>
+	<Question value="2" key="What is the evidence that obesity in childhood can be decreased?"/>
+	<Question value="3" key="What is the evidence that acquisition of obesity can be prevented in childhood and adolescence?"/>
+	<Question value="4" key="What is the effect of sibutramine on weight loss and weight loss maintenance?"/>
+</Questions>
+<LanguagesPubMed>
+	<Language value="en" key="English"/>
+	<Language value="fr" key="French"/>
+	<Language value="ge" key="German"/>
+	<Language value="it" key="Italian"/>
+	<Language value="jp" key="Japanese"/>
+	<Language value="ru" key="Russian"/>
+	<Language value="sp" key="Spanish"/>
+</LanguagesPubMed>
+<MoreLanguagesPubMed>
+	<Language value="af" key="Afrikaans"/>
+	<Language value="al" key="Albanian"/>
+	<Language value="ar" key="Arabic"/>
+	<Language value="ar" key="Armenian"/>
+	<Language value="az" key="Azerbaijani"/>
+	<Language value="bo" key="Bosnian"/>
+	<Language value="bu" key="Bulgarian"/>
+	<Language value="ca" key="Catalan"/>
+	<Language value="ch" key="Chinese"/>
+	<Language value="cr" key="Croatian"/>
+	<Language value="cz" key="Czech"/>
+	<Language value="da" key="Danish"/>
+	<Language value="de" key="Dutch"/>
+	<Language value="es" key="Esperanto"/>
+	<Language value="et" key="Estonian"/>
+	<Language value="fi" key="Finnish"/>
+	<Language value="ge" key="Georgian"/>
+	<Language value="gr" key="Greek, Modern"/>
+	<Language value="hb" key="Hebrew"/>
+	<Language value="hi" key="Hindi"/>
+	<Language value="hu" key="Hungarian"/>
+	<Language value="ic" key="Icelandic"/>
+	<Language value="in" key="Indonesian"/>
+	<Language value="ki" key="Kinyarwanda"/>
+	<Language value="ko" key="Korean"/>
+	<Language value="la" key="Latin"/>
+	<Language value="lv" key="Latvian"/>
+	<Language value="li" key="Lithuanian"/>
+	<Language value="mc" key="Macedonian"/>
+	<Language value="ml" key="Malay"/>
+	<Language value="my" key="Malayalam"/>
+	<Language value="ma" key="Maori"/>
+	<Language value="mu" key="Multiple Languages"/>
+	<Language value="nw" key="Norwegian"/>
+	<Language value="pr" key="Persian"/>
+	<Language value="po" key="Polish"/>
+	<Language value="pg" key="Portuguese"/>
+	<Language value="pu" key="Pushto"/>
+	<Language value="ro" key="Romanian"/>
+	<Language value="sa" key="Sanskrit"/>
+	<Language value="sc" key="Scottish gaelic"/>
+	<Language value="se" key="Serbian"/>
+	<Language value="sk" key="Slovak"/>
+	<Language value="sl" key="Slovenian"/>
+	<Language value="sw" key="Swedish"/>
+	<Language value="th" key="Thai"/>
+	<Language value="tu" key="Turkish"/>
+	<Language value="uk" key="Ukrainian"/>
+	<Language value="un" key="Undetermined"/>
+	<Language value="vi" key="Vietnamese"/>
+</MoreLanguagesPubMed>
+<ArticleTypesPubMed>
+	<ArticleType value="Clinical Trial" key="Clinical Trial"/>
+	<ArticleType value="Editorial" key="Editorial"/>
+	<ArticleType value="Letter" key="Letter"/>
+	<ArticleType value="Meta-Analysis" key="Meta-Analysis"/>
+	<ArticleType value="Practice Guideline" key="Practice Guideline"/>
+	<ArticleType value="Randomized Controlled Trial" key="Randomized Controlled Trial"/>
+	<ArticleType value="Review" key="Review"/>
+</ArticleTypesPubMed>
+<MoreArticleTypesPubMed>
+	<ArticleType key="Addresses" value="Addresses"/>
+	<ArticleType key="Bibliography" value="Bibliography"/>
+	<ArticleType key="Biography" value="Biography"/>
+	<ArticleType key="Case Reports" value="Case Reports"/>
+	<ArticleType key="Classical Article" value="Classical Article"/>
+	<ArticleType key="Clinical Conference" value="Clinical Conference"/>
+	<ArticleType key="Clinical Trial, Phase I" value="Clinical Trial, Phase I"/>
+	<ArticleType key="Clinical Trial, Phase II" value="Clinical Trial, Phase II"/>
+	<ArticleType key="Clinical Trial, Phase III" value="Clinical Trial, Phase III"/>
+	<ArticleType key="Clinical Trial, Phase IV" value="Clinical Trial, Phase IV"/>
+	<ArticleType key="Comment" value="Comment"/>
+	<ArticleType key="Comparative Study" value="Comparative Study"/>
+	<ArticleType key="Consensus Development Conference" value="Consensus Development Conference"/>
+	<ArticleType key="Consensus Development Conference, NIH" value="Consensus Development Conference, NIH"/>
+	<ArticleType key="Controlled Clinical Trial" value="Controlled Clinical Trial"/>
+	<ArticleType key="Corrected and Republished Article" value="Corrected and Republished Article"/>
+	<ArticleType key="Dictionary" value="Dictionary"/>
+	<ArticleType key="Directory" value="Directory"/>
+	<ArticleType key="Duplicate Publication" value="Duplicate Publication"/>
+	<ArticleType key="English Abstract" value="English Abstract"/>
+	<ArticleType key="Evaluation Studies" value="Evaluation Studies"/>
+	<ArticleType key="Festschrift" value="Festschrift"/>
+	<ArticleType key="Government Publications" value="Government Publications"/>
+	<ArticleType key="Guideline" value="Guideline"/>
+	<ArticleType key="Historical Article" value="Historical Article"/>
+	<ArticleType key="Interview" value="Interview"/>
+	<ArticleType key="In Vitro" value="In Vitro"/>
+	<ArticleType key="Journal Article" value="Journal Article"/>
+	<ArticleType key="Lectures" value="Lectures"/>
+	<ArticleType key="Legal Cases" value="Legal Cases"/>
+	<ArticleType key="Legislation" value="Legislation"/>
+	<ArticleType key="Multicenter Study" value="Multicenter Study"/>
+	<ArticleType key="News" value="News"/>
+	<ArticleType key="Newspaper Article" value="Newspaper Article"/>
+	<ArticleType key="Overall" value="Overall"/>
+	<ArticleType key="Patient Education Handout" value="Patient Education Handout"/>
+	<ArticleType key="Periodical Index" value="Periodical Index"/>
+	<ArticleType key="Published Erratum" value="Published Erratum"/>
+	<ArticleType key="Retracted Publication" value="Retracted Publication"/>
+	<ArticleType key="Research Support, N.I.H., Extramural" value="Research Support, N I H, Extramural"/>
+	<ArticleType key="Research Support, N.I.H., Intramural" value="Research Support, N I H, Intramural"/>
+	<ArticleType key="Research Support, Non-U.S. Gov't" value="Research Support, Non U S Gov't"/>
+	<ArticleType key="Research Support, U.S. Gov't, Non-P.H.S." value="Research Support, U S Gov't, Non P H S"/>
+	<ArticleType key="Research Support, U.S. Gov't, P.H.S." value="Research Support, U S Gov't, P H S"/>
+	<ArticleType key="Retraction of Publication" value="Retraction of Publication"/>
+	<ArticleType key="Scientific Integrity Review" value="Scientific Integrity Review"/>
+	<ArticleType key="Technical Report" value="Technical Report"/>
+	<ArticleType key="Twin Study" value="Twin Study"/>
+	<ArticleType key="Validation Studies" value="Validation Studies"/>
+</MoreArticleTypesPubMed>
+
+<JournalSubsets>
+	<Subset key="Core clinical journals" value="jsubsetaim"/>
+	<Subset key="Dental journals" value="jsubsetd"/>
+	<Subset key="Nursing journals" value="jsubsetn"/>
+</JournalSubsets>
+<TopicSubsets>
+	<Subset key="AIDS" value="AIDS"/>
+	<Subset key="Bioethics" value="bioethics"/>
+	<Subset key="Cancer" value="cancer"/>
+	<Subset key="Complementary Medicine" value="cam"/>
+	<Subset key="History of Medicine" value="history"/>
+	<Subset key="Space Life Sciences" value="space"/>
+	<Subset key="Systematic Reviews" value="systematic"/>
+	<Subset key="Toxicology " value="tox"/>
+</TopicSubsets>
+
+<MoreSubsets>
+	<Subset key="MEDLINE" value="medline"/>
+	<Subset key="PubMed Central" value="pubmed pmc local"/>
+</MoreSubsets>
+
+<AgeRanges>
+	<AgeRange key="All Infant: birth-23 months" value="infant[MeSH]"/>
+	<AgeRange key="All Child: 0-18 years" value="(infant[MeSH] OR child[MeSH] OR adolescent[MeSH])"/>
+	<AgeRange key="All Adult: 19+ years" value="adult[MeSH]"/>
+	<AgeRange key="Newborn: birth-1 month" value="infant, newborn[MeSH]"/>
+	<AgeRange key="Infant: 1-23 months" value="infant[MeSH:noexp]"/>
+	<AgeRange key="Preschool Child: 2-5 years" value="child, preschool[MeSH]"/>
+	<AgeRange key="Child: 6-12 years" value="child[MeSH]"/>
+	<AgeRange key="Adolescent: 13-18 years" value="adolescent[MeSH]"/>
+	<AgeRange key="Adult: 19-44 years" value="adult[MeSH:noexp]"/>
+	<AgeRange key="Middle Aged: 45-64 years" value="middle age[MeSH]"/>
+	<AgeRange key="Middle Aged + Aged: 45+ years" value="(middle age[MeSH] OR aged[MeSH])"/>
+	<AgeRange key="Aged: 65+ years" value="aged[MeSH] "/>
+	<AgeRange key="80 and over: 80+ years" value="aged, 80 and over[MeSH]"/>
+</AgeRanges>
+
+<CitationCounts>
+	<CitationCount key="100" value="100"/>
+	<CitationCount key="300" value="300"/>
+	<CitationCount key="500" value="500"/>
+	<CitationCount key="1000" value="1000"/>
+	<CitationCount key="2000" value="2000"/>
+	<CitationCount key="3000" value="3000"/>
+	<CitationCount key="4000" value="4000"/>
+	<CitationCount key="5000" value="5000"/>
+	<CitationCount key="10000" value="10000"/>
+</CitationCounts>
+
+<Sources>
+	<Source key="medline" value="Medline"/>
+	<Source key="ctrials" value="clinicaltrials.gov"/>
+	<Source key="both" value="Both sources"/>
+</Sources>
+<PredicationTypes>
+	<PredicationType key="clinical" value="Clinical"/>
+	<PredicationType key="genetic" value="Genetic"/>
+	<PredicationType key="all" value="All"/>
+</PredicationTypes>
+<SaliencyTypes>
+	<SaliencyType key="predication" value="Predications"/>
+	<SaliencyType key="concept" value="Concepts"/>
+</SaliencyTypes>
+<SummaryTypes>
+	<SummaryType key="treatment" value="Treatment of Disease"/>
+	<SummaryType key="interaction" value="Substance Interactions"/>
+	<SummaryType key="diagnosis" value="Diagnosis"/>
+	<SummaryType key="pharmacogenomics" value="Pharmacogenomics"/>
+	<!-- <SummaryType key="genetic" value="Molecular Genetics"/>	-->
+</SummaryTypes>
+<Languages>
+	<Language key="FRE" value="French"/>
+	<Language key="GER" value="German"/>
+	<Language key="ITA" value="Italian"/>
+	<Language key="POR" value="Portuguese"/>
+	<Language key="RUS" value="Russian"/>
+	<Language key="SPA" value="Spanish"/>
+</Languages>
+<PredicateSet>
+	<Predicate name="TREATS" colorCode="#0000FF" colorName="Blue">
+		<Translation lang="FRE" name="TRAITE"/>
+		<Translation lang="ITA" name="CURA"/>
+		<Translation lang="POR" name="TRATA"/>
+		<Translation lang="SPA" name="TRATA"/>
+		<Translation lang="GER" name="BEHANDELT"/>
+		<Translation lang="RUS" name="ЛEЧИT"/>
+	</Predicate>
+	<Predicate name="CAUSES" colorCode="#FF0000" colorName="Red">
+		<Translation lang="FRE" name="CAUSE"/>
+		<Translation lang="ITA" name="CAUSA"/>
+		<Translation lang="POR" name="CAUSA"/>
+		<Translation lang="SPA" name="CAUSA"/>
+		<Translation lang="GER" name="VERURSACHT"/>
+		<Translation lang="RUS" name="ВЫЗЫВАЕТ"/>
+	</Predicate>
+	<Predicate name="CAUSE" colorCode="#FF0000" colorName="Red">
+		<Translation lang="FRE" name="CAUSE"/>
+		<Translation lang="ITA" name="CAUSA"/>
+		<Translation lang="POR" name="CAUSA"/>
+		<Translation lang="SPA" name="CAUSA"/>
+		<Translation lang="GER" name="VERURSACHT"/>
+		<Translation lang="RUS" name="ВЫЗЫВАЕТ"/>
+	</Predicate>
+	<Predicate name="LOCATION_OF" colorCode="#008000" colorName="Green">
+		<Translation lang="FRE" name="LOCALISATION_DE"/>
+		<Translation lang="ITA" name="LOCALIZZAZIONE_DI"/>
+		<Translation lang="POR" name="LOCALIZAÇÃO_DE"/>
+		<Translation lang="SPA" name="UBICACIÓN_DE"/>
+		<Translation lang="GER" name="BEFINDET_SICH_BEI"/>
+		<Translation lang="RUS" name="МЕСТОНАХОЖДЕНИЕ"/>
+	</Predicate>
+	<Predicate name="ISA" colorCode="#00FFFF" colorName="Cyan">
+		<Translation lang="FRE" name="EST_UNE_SORTE_DE"/>
+		<Translation lang="ITA" name="É_UN"/>
+		<Translation lang="POR" name="É_UM_TIPO_DE"/>
+		<Translation lang="SPA" name="ES_UN_TIPO_DE"/>
+		<Translation lang="GER" name="IST_VOM_TYPUS"/>
+		<Translation lang="RUS" name="ЕСТЬ"/>
+	</Predicate>
+	<Predicate name="PREVENTS" colorCode="#4682B4" colorName="SteelBlue">
+		<Translation lang="FRE" name="PRÉVIENT"/>
+		<Translation lang="ITA" name="PREVIENE"/>
+		<Translation lang="POR" name="PREVINE"/>
+		<Translation lang="SPA" name="PREVIENE"/>
+		<Translation lang="GER" name="BEUGT_VOR_GEGEN"/>
+		<Translation lang="RUS" name="ПРЕДОТВРАЩАЕТ"/>
+	</Predicate>
+	<Predicate name="CO-OCCURS_WITH" colorCode="#808080" colorName="Gray">
+		<Translation lang="FRE" name="SURVIENT_AVEC"/>
+		<Translation lang="ITA" name="CO-ACCADE_CON"/>
+		<Translation lang="POR" name="OCORRE_COM"/>
+		<Translation lang="SPA" name="OCURRE_CON"/>
+		<Translation lang="GER" name="TRITT_ZUSAMMEN_AUF_BEI"/>
+		<Translation lang="RUS" name="СОПУТСТВУЕТ"/>
+	</Predicate>
+	<Predicate name="COEXISTS_WITH" colorCode="#2F4F4F" colorName="DarkSlateGray">
+		<Translation lang="FRE" name="CO-EXISTE_AVEC"/>
+		<Translation lang="ITA" name="CO-ESISTE_CON"/>
+		<Translation lang="POR" name="CO-EXISTE_COM"/>
+		<Translation lang="SPA" name="CO-EXISTE_CON"/>
+		<Translation lang="GER" name="TRITT_ZUSAMMEN_AUF_BEI"/>
+		<Translation lang="RUS" name="ВСТРЕЧАЕТСЯ_ВМЕСТЕ_С"/>
+	</Predicate>
+	<Predicate name="OCCURS_IN" colorCode="#FFA500" colorName="Orange">
+		<Translation lang="FRE" name="SURVIENT_DANS"/>
+		<Translation lang="ITA" name="ACCADE_IN"/>
+		<Translation lang="POR" name="OCORRE_EM"/>
+		<Translation lang="SPA" name="OCURRE_EN"/>
+		<Translation lang="GER" name="TRITT_AUF"/>
+		<Translation lang="RUS" name="ВСТРЕЧАЕТСЯ"/>
+	</Predicate>
+	<Predicate name="STIMULATE" colorCode="#A52A2A" colorName="Brown">
+		<Translation lang="FRE" name="STIMULE"/>
+		<Translation lang="ITA" name="STIMOLA"/>
+		<Translation lang="GER" name="STIMULIERT"/>
+		<Translation lang="POR" name="ESTIMULA"/>
+		<Translation lang="RUS" name="СТИМУЛИРУЕТ"/>
+		<Translation lang="SPA" name="ESTIMULA"/>
+	</Predicate>
+	<Predicate name="STIMULATES" colorCode="#A52A2A" colorName="Brown">
+		<Translation lang="FRE" name="STIMULE"/>
+		<Translation lang="ITA" name="STIMOLA"/>
+		<Translation lang="GER" name="STIMULIERT"/>
+		<Translation lang="POR" name="ESTIMULA"/>
+		<Translation lang="RUS" name="СТИМУЛИРУЕТ"/>
+		<Translation lang="SPA" name="ESTIMULA"/>
+	</Predicate>
+	<Predicate name="INHIBIT" colorCode="#800080" colorName="Purple">
+		<Translation lang="FRE" name="INHIBE"/>
+		<Translation lang="ITA" name="INBIRE"/>
+		<Translation lang="GER" name="VERHINDERT"/>
+		<Translation lang="POR" name="INIBE"/>
+		<Translation lang="RUS" name="ПОДАВЛЯЕТ"/>
+		<Translation lang="SPA" name="INHIBE"/>
+	</Predicate>
+	<Predicate name="INHIBITS" colorCode="#800080" colorName="Purple">
+		<Translation lang="FRE" name="INHIBE"/>
+		<Translation lang="ITA" name="INBIRE"/>
+		<Translation lang="GER" name="VERHINDERT"/>
+		<Translation lang="POR" name="INIBE"/>
+		<Translation lang="RUS" name="ПОДАВЛЯЕТ"/>
+		<Translation lang="SPA" name="INHIBE"/>
+	</Predicate>
+	<Predicate name="PREDISPOSE" colorCode="#7FFFD4" colorName="Aquamarine">
+		<Translation lang="FRE" name="PRÉDISPOSE"/>
+		<Translation lang="ITA" name="PREDISPONE"/>
+		<Translation lang="GER" name="PRÄDISPONIERT"/>
+		<Translation lang="POR" name="PREDISPÕE"/>
+		<Translation lang="RUS" name="ПРЕДРАСПОЛАГАЕТ"/>
+		<Translation lang="SPA" name="PREDISPONE"/>
+	</Predicate>
+	<Predicate name="PREDISPOSES" colorCode="#7FFFD4" colorName="Aquamarine">
+		<Translation lang="FRE" name="PRÉDISPOSE"/>
+		<Translation lang="ITA" name="PREDISPONE"/>
+		<Translation lang="GER" name="PRÄDISPONIERT"/>
+		<Translation lang="POR" name="PREDISPÕE"/>
+		<Translation lang="RUS" name="ПРЕДРАСПОЛАГАЕТ"/>
+		<Translation lang="SPA" name="PREDISPONE"/>
+	</Predicate>
+	<Predicate name="DISRUPTS" colorCode="#FFFF00" colorName="Yellow">
+		<Translation lang="FRE" name="PERTURBE"/>
+		<Translation lang="ITA" name="SCOMBUSSOLA"/>
+		<Translation lang="GER" name="UNTERBRICHT"/>
+		<Translation lang="POR" name="INTERROMPE"/>
+		<Translation lang="RUS" name="ПРЕРЫВАЕТ"/>
+		<Translation lang="SPA" name="INTERRUMPE"/>
+	</Predicate>
+	<Predicate name="ASSOCIATED_WITH" colorCode="#D19275" colorName="Feldspar">
+		<Translation lang="FRE" name="ASSOCIÉ_À"/>
+		<Translation lang="ITA" name="ASSOCIATO_CON"/>
+		<Translation lang="GER" name="IST_VERBUNDEN_MIT"/>
+		<Translation lang="POR" name="ASSOCIADO_COM"/>
+		<Translation lang="RUS" name="СВЯЗАНО_С"/>
+		<Translation lang="SPA" name="SE_RELACIONA_CON"/>
+	</Predicate>
+	<Predicate name="INTERACT_WITH" colorCode="#FF00FF" colorName="Fuchsia">
+		<Translation lang="FRE" name="INTERAGIT_AVEC"/>
+		<Translation lang="ITA" name="INTERAGISCE_CON"/>
+		<Translation lang="GER" name="INTERAGIERT_MIT"/>
+		<Translation lang="POR" name="INTERAGE_COM"/>
+		<Translation lang="RUS" name="ВЗАИМОДЕЙСТВУЕТ_C"/>
+		<Translation lang="SPA" name="INTERACTÚA_CON"/>
+	</Predicate>
+	<Predicate name="INTERACTS_WITH" colorCode="#FF00FF" colorName="Fuchsia">
+		<Translation lang="FRE" name="INTERAGIT_AVEC"/>
+		<Translation lang="ITA" name="INTERAGISCE_CON"/>
+		<Translation lang="GER" name="INTERAGIERT_MIT"/>
+		<Translation lang="POR" name="INTERAGE_COM"/>
+		<Translation lang="RUS" name="ВЗАИМОДЕЙСТВУЕТ_C"/>
+		<Translation lang="SPA" name="INTERACTÚA_CON"/>
+	</Predicate>
+	<Predicate name="DIAGNOSES" colorCode="#D2691E" colorName="Chocolate">
+		<Translation lang="FRE" name="DIAGNOSTIQUE"/>
+		<Translation lang="ITA" name="DIAGNOSTICA"/>
+		<Translation lang="GER" name="DIAGNOSTIZIERT"/>
+		<Translation lang="POR" name="DIAGNOSTICA"/>
+		<Translation lang="RUS" name="ДИАГНОСТИРУЕТ"/>
+		<Translation lang="SPA" name="DIAGNOSTICA"/>
+	</Predicate>
+	<Predicate name="AFFECTS" colorCode="#32CD32" colorName="LimeGreen">
+		<Translation lang="FRE" name="AFFECTE"/>
+		<Translation lang="ITA" name="COLPISCE"/>
+		<Translation lang="GER" name="BEEINFLUßT"/>
+		<Translation lang="POR" name="AFETA"/>
+		<Translation lang="RUS" name="ВЛИЯЕТ"/>
+		<Translation lang="SPA" name="AFECTA"/>
+	</Predicate>
+	<Predicate name="COMPLICATES" colorCode="#BC8F8F" colorName="RosyBrown">
+		<Translation lang="FRE" name="COMPLIQUE"/>
+		<Translation lang="ITA" name="COMPLICA"/>
+		<Translation lang="GER" name="VERKOMPLIZIERT"/>
+		<Translation lang="POR" name="COMPLICA"/>
+		<Translation lang="RUS" name="ОСЛОЖНЯЕТ"/>
+		<Translation lang="SPA" name="COMPLICA"/>
+	</Predicate><!--
+	<Predicate name="ENHANCES" colorCode="#40E0D0" colorName="Turquoise">
+		<Translation lang="FRE" name="AMÉLIORE"/>
+		<Translation lang="ITA" name="MIGLIORA"/>
+		<Translation lang="GER" name="VERBESSERT"/>
+		<Translation lang="POR" name="AUMENTA"/>
+		<Translation lang="RUS" name="УСИЛИВАЕТ"/>
+		<Translation lang="SPA" name="MEJORA"/>
+	</Predicate>
+	--><Predicate name="AUGMENTS" colorCode="#40E0D0" colorName="Turquoise">
+		<Translation lang="FRE" name="ACCROÎT"/>
+		<Translation lang="ITA" name="INTENSIFICA"/>
+		<Translation lang="GER" name="VERBESSERT"/>
+		<Translation lang="POR" name="AUMENTA"/>
+		<Translation lang="RUS" name="ВЛИЯЕТ"/>
+		<Translation lang="SPA" name="AUMENTA"/>
+	</Predicate>
+	<Predicate name="PART_OF" colorCode="#008080" colorName="Teal">
+		<Translation lang="FRE" name="PARTIE_DE"/>
+		<Translation lang="ITA" name="PARTE_DI"/>
+		<Translation lang="GER" name="TEIL_VON"/>
+		<Translation lang="POR" name="PARTE_DE"/>
+		<Translation lang="RUS" name="ЧАСТЬ"/>
+		<Translation lang="SPA" name="PARTE_DE"/>
+	</Predicate>
+	<Predicate name="PROCESS_OF" colorCode="#FA8072" colorName="Salmon">
+		<Translation lang="FRE" name="PROCESSUS_DE"/>
+		<Translation lang="ITA" name="PROCESSO_DI"/>
+		<Translation lang="GER" name="PROZEß_VON"/>
+		<Translation lang="POR" name="PROCESSO_DE"/>
+		<Translation lang="RUS" name="ПРОЦЕСС"/>
+		<Translation lang="SPA" name="PROCESO_DE"/>
+	</Predicate>
+	<Predicate name="CONVERTS_TO" colorCode="#4B0082" colorName="Indigo">
+		<Translation lang="FRE" name="SE_CONVERTIT_EN"/>
+		<Translation lang="ITA" name="TRASFORMA"/>
+		<Translation lang="POR" name="CONVERTE_EM"/>
+		<Translation lang="RUS" name="ПРЕВРАЩАЕТСЯ_В"/>
+		<Translation lang="SPA" name="SE_CONVIERTE_EN"/>
+	</Predicate>
+	<Predicate name="ADMINISTERED_TO" colorCode="#6B8E23" colorName="OliveDrab">
+		<Translation lang="FRE" name="ADMINISTRÉ_À"/>
+		<Translation lang="ITA" name="SOMMINISTRATA"/>
+		<Translation lang="POR" name="ADMINISTRADO_PARA"/>
+		<Translation lang="RUS" name="ПРИМЕНЕННЫЙ"/>
+		<Translation lang="SPA" name="ADMINISTRADO_A"/>
+	</Predicate>
+	<Predicate name="MANIFESTATION_OF" colorCode="#CD853F" colorName="Peru">
+		<Translation lang="FRE" name="MANIFESTATION_DE"/>
+		<Translation lang="ITA" name="COMPARSA"/>
+		<Translation lang="POR" name="MANIFESTA-SE_EM"/>
+		<Translation lang="RUS" name="ПРОЯВЛЕНИЕ"/>
+		<Translation lang="SPA" name="MANIFESTACIÓN_DE"/>
+	</Predicate>
+</PredicateSet>
+<SemanticGroups>
+	<SemanticGroup name="Activities &amp; Behaviors" abbreviation="ACTI" colorCode="#FFA16D" colorName="Dark Orange">
+		<SemanticType name="Activity" abbreviation="acty"/>
+		<SemanticType name="Behavior" abbreviation="bhvr"/>
+		<SemanticType name="Daily or Recreational Activity" abbreviation="dora"/>
+		<SemanticType name="Event" abbreviation="evnt"/>
+		<SemanticType name="Governmental or Regulatory Activity" abbreviation="gora"/>
+		<SemanticType name="Individual Behavior" abbreviation="inbe"/>
+		<SemanticType name="Machine Activity" abbreviation="mcha"/>
+		<SemanticType name="Occupational Activity" abbreviation="ocac"/>
+		<SemanticType name="Social Behavior" abbreviation="socb"/>
+	</SemanticGroup>
+	<SemanticGroup name="Anatomy" abbreviation="ANAT" colorCode="#CBFFA7" colorName="Light Green">
+		<SemanticType name="Anatomical Structure" abbreviation="anst"/>
+		<SemanticType name="Body Location or Region" abbreviation="blor"/>
+		<SemanticType name="Body Part, Organ, or Organ Component" abbreviation="bpoc"/>
+		<SemanticType name="Body Space or Junction" abbreviation="bsoj"/>
+		<SemanticType name="Body Substance" abbreviation="bdsu"/>
+		<SemanticType name="Body System" abbreviation="bdsy"/>
+		<SemanticType name="Cell" abbreviation="cell"/>
+		<SemanticType name="Cell Component" abbreviation="celc"/>
+		<SemanticType name="Embryonic Structure" abbreviation="emst"/>
+		<SemanticType name="Fully Formed Anatomical Structure" abbreviation="ffas"/>
+		<SemanticType name="Tissue" abbreviation="tisu"/>
+	</SemanticGroup>
+	<SemanticGroup name="Chemicals &amp; Drugs" abbreviation="CHEM" colorCode="#FFFFC6" colorName="Light Yellow">
+		<SemanticType name="Amino Acid, Peptide, or Protein" abbreviation="aapp"/>
+		<SemanticType name="Antibiotic" abbreviation="antb"/>
+		<SemanticType name="Biologically Active Substance" abbreviation="bacs"/>
+		<SemanticType name="Biomedical or Dental Material" abbreviation="bodm"/>
+		<SemanticType name="Carbohydrate" abbreviation="carb"/>
+		<SemanticType name="Chemical" abbreviation="chem"/>
+		<SemanticType name="Chemical Viewed Functionally" abbreviation="chvf"/>
+		<SemanticType name="Chemical Viewed Structurally" abbreviation="chvs"/>
+		<SemanticType name="Clinical Drug" abbreviation="clnd"/>
+		<SemanticType name="Eicosanoid" abbreviation="eico"/>
+		<SemanticType name="Element, Ion, or Isotope" abbreviation="elii"/>
+		<SemanticType name="Enzyme" abbreviation="enzy"/>
+		<SemanticType name="Hazardous or Poisonous Substance" abbreviation="hops"/>
+		<SemanticType name="Hormone" abbreviation="horm"/>
+		<SemanticType name="Immunologic Factor" abbreviation="imft"/>
+		<SemanticType name="Indicator, Reagent, or Diagnostic Aid" abbreviation="irda"/>
+		<SemanticType name="Inorganic Chemical" abbreviation="inch"/>
+		<SemanticType name="Lipid" abbreviation="lipd"/>
+		<SemanticType name="Neuroreactive Substance or Biogenic Amine" abbreviation="nsba"/>
+		<SemanticType name="Nucleic Acid, Nucleoside, or Nucleotide" abbreviation="nnon"/>
+		<SemanticType name="Organic Chemical" abbreviation="orch"/>
+		<SemanticType name="Organophosphorus Compound" abbreviation="opco"/>
+		<SemanticType name="Pharmacologic Substance" abbreviation="phsu"/>
+		<SemanticType name="Receptor" abbreviation="rcpt"/>
+		<SemanticType name="Steroid" abbreviation="strd"/>
+		<SemanticType name="Vitamin" abbreviation="vita"/>
+	</SemanticGroup>
+	<SemanticGroup name="Concepts &amp; Ideas" abbreviation="CONC" colorCode="#96FF4F" colorName="Bright Green">
+		<SemanticType name="Classification" abbreviation="clas"/>
+		<SemanticType name="Conceptual Entity" abbreviation="cnce"/>
+		<SemanticType name="Functional Concept" abbreviation="ftcn"/>
+		<SemanticType name="Group Attribute" abbreviation="grpa"/>
+		<SemanticType name="Idea or Concept" abbreviation="idcn"/>
+		<SemanticType name="Intellectual Product" abbreviation="inpr"/>
+		<SemanticType name="Language" abbreviation="lang"/>
+		<SemanticType name="Qualitative Concept" abbreviation="qlco"/>
+		<SemanticType name="Quantitative Concept" abbreviation="qnco"/>
+		<SemanticType name="Regulation or Law" abbreviation="rnlw"/>
+		<SemanticType name="Spatial Concept" abbreviation="spco"/>
+		<SemanticType name="Temporal Concept" abbreviation="tmco"/>
+	</SemanticGroup>
+	<SemanticGroup name="Devices" abbreviation="DEVI" colorCode="#FFFF66" colorName="Bright Yellow">
+		<SemanticType name="Drug Delivery Device" abbreviation="drdd"/>
+		<SemanticType name="Medical Device" abbreviation="medd"/>
+		<SemanticType name="Research Device" abbreviation="resd"/>
+	</SemanticGroup>
+	<SemanticGroup name="Disorders" abbreviation="DISO" colorCode="#EEC8DE" colorName="Light Pink">
+		<SemanticType name="Acquired Abnormality" abbreviation="acab"/>
+		<SemanticType name="Anatomical Abnormality" abbreviation="anab"/>
+		<SemanticType name="Cell or Molecular Dysfunction" abbreviation="comd"/>
+		<SemanticType name="Congenital Abnormality" abbreviation="cgab"/>
+		<SemanticType name="Disease or Syndrome" abbreviation="dsyn"/>
+		<SemanticType name="Experimental Model of Disease" abbreviation="emod"/>
+		<SemanticType name="Finding" abbreviation="fndg"/>
+		<SemanticType name="Injury or Poisoning" abbreviation="inpo"/>
+		<SemanticType name="Mental or Behavioral Dysfunction" abbreviation="mobd"/>
+		<SemanticType name="Neoplastic Process" abbreviation="neop"/>
+		<SemanticType name="Pathologic Function" abbreviation="patf"/>
+		<SemanticType name="Sign or Symptom" abbreviation="sosy"/>
+	</SemanticGroup>
+	<SemanticGroup name="Genes &amp; Molecular Sequences" abbreviation="GENE" colorCode="#D2A2A2" colorName="Light Brown">
+		<SemanticType name="Amino Acid Sequence" abbreviation="amas"/>
+		<SemanticType name="Carbohydrate Sequence" abbreviation="crbs"/>
+		<SemanticType name="Gene or Genome" abbreviation="gngm"/>
+		<SemanticType name="Molecular Sequence" abbreviation="mosq"/>
+		<SemanticType name="Nucleotide Sequence" abbreviation="nusq"/>
+	</SemanticGroup>
+	<SemanticGroup name="Geographic Areas" abbreviation="GEOG" colorCode="#B16363" colorName="Dark Brown">
+		<SemanticType name="Geographic Area" abbreviation="geoa"/>
+	</SemanticGroup>
+	<SemanticGroup name="Living Beings" abbreviation="LIVB" colorCode="#C6EFF7" colorName="Light Blue">
+		<SemanticType name="Age Group" abbreviation="aggp"/>
+		<SemanticType name="Alga" abbreviation="alga"/>
+		<SemanticType name="Amphibian" abbreviation="amph"/>
+		<SemanticType name="Animal" abbreviation="anim"/>
+		<SemanticType name="Archaeon" abbreviation="arch"/>
+		<SemanticType name="Bacterium" abbreviation="bact"/>
+		<SemanticType name="Bird" abbreviation="bird"/>
+		<SemanticType name="Family Group" abbreviation="famg"/>
+		<SemanticType name="Fish" abbreviation="fish"/>
+		<SemanticType name="Fungus" abbreviation="fngs"/>
+		<SemanticType name="Group" abbreviation="grup"/>
+		<SemanticType name="Human" abbreviation="humn"/>
+		<SemanticType name="Invertebrate" abbreviation="invt"/>
+		<SemanticType name="Mammal" abbreviation="mamm"/>
+		<SemanticType name="Organism" abbreviation="orgm"/>
+		<SemanticType name="Patient or Disabled Group" abbreviation="podg"/>
+		<SemanticType name="Plant" abbreviation="plnt"/>
+		<SemanticType name="Population Group" abbreviation="popg"/>
+		<SemanticType name="Professional or Occupational Group" abbreviation="prog"/>
+		<SemanticType name="Reptile" abbreviation="rept"/>
+		<SemanticType name="Rickettsia or Chlamydia" abbreviation="rich"/>
+		<SemanticType name="Vertebrate" abbreviation="vtbt"/>
+		<SemanticType name="Virus" abbreviation="virs"/>
+	</SemanticGroup>
+	<SemanticGroup name="Objects" abbreviation="OBJC" colorCode="#6FD6EB" colorName="Bright Blue">
+		<SemanticType name="Entity" abbreviation="enty"/>
+		<SemanticType name="Food" abbreviation="food"/>
+		<SemanticType name="Manufactured Object" abbreviation="mnob"/>
+		<SemanticType name="Physical Object" abbreviation="phob"/>
+		<SemanticType name="Substance" abbreviation="sbst"/>
+	</SemanticGroup>
+	<SemanticGroup name="Occupations" abbreviation="OCCU" colorCode="#A88FCD" colorName="Dark Purple">
+		<SemanticType name="Biomedical Occupation or Discipline" abbreviation="bmod"/>
+		<SemanticType name="Occupation or Discipline" abbreviation="ocdi"/>
+	</SemanticGroup>
+	<SemanticGroup name="Organizations" abbreviation="ORGA" colorCode="#FFD7C1" colorName="Light Orange">
+		<SemanticType name="Health Care Related Organization" abbreviation="hcro"/>
+		<SemanticType name="Organization" abbreviation="orgt"/>
+		<SemanticType name="Professional Society" abbreviation="pros"/>
+		<SemanticType name="Self-help or Relief Organization" abbreviation="shro"/>
+	</SemanticGroup>
+	<SemanticGroup name="Phenomena" abbreviation="PHEN" colorCode="#DE93BD" colorName="Dark Pink">
+		<SemanticType name="Biologic Function" abbreviation="biof"/>
+		<SemanticType name="Environmental Effect of Humans" abbreviation="eehu"/>
+		<SemanticType name="Human-caused Phenomenon or Process" abbreviation="hcpp"/>
+		<SemanticType name="Laboratory or Test Result" abbreviation="lbtr"/>
+		<SemanticType name="Natural Phenomenon or Process" abbreviation="npop"/>
+		<SemanticType name="Phenomenon or Process" abbreviation="phpr"/>
+	</SemanticGroup>
+	<SemanticGroup name="Physiology" abbreviation="PHYS" colorCode="#DCD1EB" colorName="Light Purple">
+		<SemanticType name="Cell Function" abbreviation="celf"/>
+		<SemanticType name="Clinical Attribute" abbreviation="clna"/>
+		<SemanticType name="Genetic Function" abbreviation="genf"/>
+		<SemanticType name="Mental Process" abbreviation="menp"/>
+		<SemanticType name="Molecular Function" abbreviation="moft"/>
+		<SemanticType name="Organ or Tissue Function" abbreviation="ortf"/>
+		<SemanticType name="Organism Attribute" abbreviation="orga"/>
+		<SemanticType name="Organism Function" abbreviation="orgf"/>
+		<SemanticType name="Physiologic Function" abbreviation="phsf"/>
+	</SemanticGroup>
+	<SemanticGroup name="Procedures" abbreviation="PROC" colorCode="#C0C0C0" colorName="Light Gray">
+		<SemanticType name="Diagnostic Procedure" abbreviation="diap"/>
+		<SemanticType name="Educational Activity" abbreviation="adac"/>
+		<SemanticType name="Health Care Activity" abbreviation="hlca"/>
+		<SemanticType name="Laboratory Procedure" abbreviation="lbpr"/>
+		<SemanticType name="Molecular Biology Research Technique" abbreviation="mbrt"/>
+		<SemanticType name="Research Activity" abbreviation="resa"/>
+		<SemanticType name="Therapeutic or Preventive Procedure" abbreviation="topp"/>
+	</SemanticGroup>
+</SemanticGroups>
+<UnusedColorSet>
+	<Color colorCode="#D2B48C" colorName="Tan"/>
+	<Color colorCode="#DC143C" colorName="Crimson"/>
+	<Color colorCode="#FF69B4" colorName="HotPink"/>
+	<Color colorCode="#008B8B" colorName="DarkCyan"/>
+	<Color colorCode="#8A2BE2" colorName="BlueViolet"/>
+	<Color colorCode="#DEB887" colorName="BurlyWood"/>
+	<Color colorCode="#FFC0CB" colorName="Pink"/>
+	<Color colorCode="#5F9EA0" colorName="CadetBlue"/>
+	<Color colorCode="#7FFF00" colorName="Chartreuse"/>
+	<Color colorCode="#FF7F50" colorName="Coral"/>
+	<Color colorCode="#6495ED" colorName="CornflowerBlue"/>
+	<Color colorCode="#B8860B" colorName="DarkGoldenRod"/>
+	<Color colorCode="#A9A9A9" colorName="DarkGray"/>
+	<Color colorCode="#006400" colorName="DarkGreen"/>
+	<Color colorCode="#F5F5DC" colorName="Beige"/>
+	<Color colorCode="#FFE4C4" colorName="Bisque"/>
+	<Color colorCode="#FFEBCD" colorName="BlanchedAlmond"/>
+	<Color colorCode="#BDB76B" colorName="DarkKhaki"/>
+	<Color colorCode="#8B008B" colorName="DarkMagenta"/>
+	<Color colorCode="#8FBC8F" colorName="DarkSeaGreen"/>
+	<Color colorCode="#483D8B" colorName="DarkSlateBlue"/>
+	<Color colorCode="#2F4F4F" colorName="DarkSlateGray"/>
+	<Color colorCode="#00CED1" colorName="DarkTurquoise"/>
+	<Color colorCode="#9400D3" colorName="DarkViolet"/>
+	<Color colorCode="#FF1493" colorName="DeepPink"/>
+	<Color colorCode="#00BFFF" colorName="DeepSkyBlue"/>
+	<Color colorCode="#696969" colorName="DimGray"/>
+	<Color colorCode="#1E90FF" colorName="DodgerBlue"/>
+	<Color colorCode="#00008B" colorName="DarkBlue"/>
+	<Color colorCode="#B22222" colorName="FireBrick"/>
+	<Color colorCode="#228B22" colorName="ForestGreen"/>
+	<Color colorCode="#DCDCDC" colorName="Gainsboro"/>
+	<Color colorCode="#FFD700" colorName="Gold"/>
+	<Color colorCode="#DAA520" colorName="GoldenRod"/>
+	<Color colorCode="#ADFF2F" colorName="GreenYellow"/>
+	<Color colorCode="#CD5C5C" colorName="IndianRed"/>
+	<Color colorCode="#F0E68C" colorName="Khaki"/>
+	<Color colorCode="#E6E6FA" colorName="Lavender"/>
+	<Color colorCode="#FFF0F5" colorName="LavenderBlush"/>
+	<Color colorCode="#7CFC00" colorName="LawnGreen"/>
+	<Color colorCode="#FFFACD" colorName="LemonChiffon"/>
+	<Color colorCode="#00FF00" colorName="Lime"/>
+	<Color colorCode="#800000" colorName="Maroon"/>
+	<Color colorCode="#66CDAA" colorName="MediumAquaMarine"/>
+	<Color colorCode="#0000CD" colorName="MediumBlue"/>
+	<Color colorCode="#BA55D3" colorName="MediumOrchid"/>
+	<Color colorCode="#9370D8" colorName="MediumPurple"/>
+	<Color colorCode="#3CB371" colorName="MediumSeaGreen"/>
+	<Color colorCode="#7B68EE" colorName="MediumSlateBlue"/>
+	<Color colorCode="#00FA9A" colorName="MediumSpringGreen"/>
+	<Color colorCode="#48D1CC" colorName="MediumTurquoise"/>
+	<Color colorCode="#C71585" colorName="MediumVioletRed"/>
+	<Color colorCode="#191970" colorName="MidnightBlue"/>
+	<Color colorCode="#FFE4B5" colorName="Moccasin"/>
+	<Color colorCode="#FFDEAD" colorName="NavajoWhite"/>
+	<Color colorCode="#000080" colorName="Navy"/>
+	<Color colorCode="#808000" colorName="Olive"/>
+	<Color colorCode="#556B2F" colorName="DarkOliveGreen"/>
+	<Color colorCode="#FF8C00" colorName="Darkorange"/>
+	<Color colorCode="#9932CC" colorName="DarkOrchid"/>
+	<Color colorCode="#8B0000" colorName="DarkRed"/>
+	<Color colorCode="#E9967A" colorName="DarkSalmon"/>
+	<Color colorCode="#FF4500" colorName="OrangeRed"/>
+	<Color colorCode="#DA70D6" colorName="Orchid"/>
+	<Color colorCode="#EEE8AA" colorName="PaleGoldenRod"/>
+	<Color colorCode="#98FB98" colorName="PaleGreen"/>
+	<Color colorCode="#AFEEEE" colorName="PaleTurquoise"/>
+	<Color colorCode="#D87093" colorName="PaleVioletRed"/>
+	<Color colorCode="#FFEFD5" colorName="PapayaWhip"/>
+	<Color colorCode="#FFDAB9" colorName="PeachPuff"/>
+	<Color colorCode="#DDA0DD" colorName="Plum"/>
+	<Color colorCode="#4169E1" colorName="RoyalBlue"/>
+	<Color colorCode="#8B4513" colorName="SaddleBrown"/>
+	<Color colorCode="#F4A460" colorName="SandyBrown"/>
+	<Color colorCode="#2E8B57" colorName="SeaGreen"/>
+	<Color colorCode="#FFF5EE" colorName="SeaShell"/>
+	<Color colorCode="#A0522D" colorName="Sienna"/>
+	<Color colorCode="#C0C0C0" colorName="Silver"/>
+	<Color colorCode="#87CEEB" colorName="SkyBlue"/>
+	<Color colorCode="#708090" colorName="SlateGray"/>
+	<Color colorCode="#6A5ACD" colorName="SlateBlue"/>
+	<Color colorCode="#00FF7F" colorName="SpringGreen"/>
+	<Color colorCode="#FF00FF" colorName="Magenta"/>
+	<Color colorCode="#D8BFD8" colorName="Thistle"/>
+	<Color colorCode="#FF6347" colorName="Tomato"/>
+	<Color colorCode="#EE82EE" colorName="Violet"/>
+	<Color colorCode="#D02090" colorName="VioletRed"/>
+	<Color colorCode="#F5DEB3" colorName="Wheat"/>
+	<Color colorCode="#9ACD32" colorName="YellowGreen"/>
+</UnusedColorSet>
+<PredicateMappingSet>
+	<Mapping umlsRelation="may_treat" predicate="TREATS" inverse="false"/>
+	<Mapping umlsRelation="may_prevent" predicate="PREVENTS" inverse="false"/>
+	<Mapping umlsRelation="co-occurs_with" predicate="CO-OCCURS_WITH" inverse="false"/>
+	<Mapping umlsRelation="descendent" predicate="ISA" inverse="false"/>
+	<Mapping umlsRelation="ancestor" predicate="ISA" inverse="true"/>
+	<Mapping umlsRelation="isa" predicate="ISA" inverse="false"/>
+	<Mapping umlsRelation="clinically_associated_with" predicate="ASSOCIATED_WITH" inverse="false"/>
+	<Mapping umlsRelation="associated_with" predicate="ASSOCIATED_WITH" inverse="false"/>
+</PredicateMappingSet>
+</SemMedDefs>

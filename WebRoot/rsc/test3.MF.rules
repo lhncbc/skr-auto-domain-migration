@@ -1,0 +1,139 @@
+# Define domain sets. These domains may change
+SET(Childhood):Child|School child|Youth|Adolescent|Adolescents, Female|Adolescents, Male|Boys|Girls|Infant;
+
+SET(Adulthood):Patients|Adult|Male population group|Woman|Young adult|Persons|Middle Aged|Human|Woman|Male population group;
+
+SET(Race_Ethnic_Geo):Ethnic group|Caucasians|White British|Hispanic Americans|Black race|Samoan (ethnic group)|African American|Pacific Islander Americans|Central American|Mexican|Inuits|Racial group|Latinos|Polynesians (ethnic group)| Minority Groups|Micronesians (ethnic group)|Mexican Americans|Hispanic Americans|Puerto Ricans|Native Americans|Latinas|Cuban|Asians|American;
+
+
+SET(Target_Population):Childhood|Adulthood;
+
+SET(No_Child):MINUS(Target_Population,Childhood);
+
+SET(No_Adult):MINUS(Target_Population,Adulthood);
+
+SET(Atherosclerosis_Set):Atherosclerosis|Arteriosclerosis|Coronary Arteriosclerosis|Carotid Atherosclerosis|Endothelial dysfunction|Intima media thickness;
+
+SET(Cardiovascular_Disease_Set):Coronary heart disease|Coronary Arteriosclerosis|Heart Diseases|Myocardial Ischemia|Cardiovascular Diseases|Coronary artery calcification;
+
+SET(Set_Obesity):Obesity|Overweight|Weight Gain;
+
+SET(Risk_Factor):Set_Obesity|Set_Metabolic syndrome|Set_Diabetes Mellitus|Set_Inflammation|;
+
+SET(Process_Set):PROCESS_OF;
+
+SET(Location_Set):LOCATION_OF;
+
+SET(Organ_Set):Organ;
+
+SET(Damage_Set):Tissue damage|Injury;
+
+SET(Associated):PREDISPOSES|AFFECTS|COEXISTS_WITH;
+
+SET(Decrease):TREATS|PREVENTS|AFFECTS;
+
+#SET(Arthero_Risk):Artherosclerosis_Set|Risk_Factor;
+
+
+SET(Sibutramine_Set):sibutramine;
+
+
+# Definie predications and arguments to be used by rules
+
+
+EXISTS(A1):subject(Atherosclerosis_Set),predicate(Process_Set),object(Childhood);
+
+DOESNOTEXISTS(A1.1):subject(Atherosclerosis_Set),predicate(Process_Set),object(No_Child);
+
+EXISTS(A2):subject(Atherosclerosis_Set),predicate(Process_Set),object(Adulthood);
+
+EXISTS(B):subject(Atherosclerosis_Set),predicate(Process_Set),object(Target_Population);
+
+EXISTS(C):subject(Arthero_Risk),predicate(Associated),object(Arthero_Risk);
+
+EXISTS(C1):subject(Set_Obesity),predicate(Associated),object(Atherosclerosis_Set);
+
+EXISTS(C2):subject(Atherosclerosis_Set),predicate(Associated),object(Set_Obesity);
+
+EXISTS(C3):subject(Set_Obesity),predicate(Associated),object(Cardiovascular_Disease_Set);
+
+EXISTS(C4):subject(Cardiovascular_Disease_Set),predicate(Associated),object(Set_Obesity);
+
+EXISTS(D):subject(Risk_Factor),predicate(Process_Set),object(Target_Population);obesity.query
+
+EXISTS(D1):subject(Set_Obesity),predicate(Process_Set),object(Childhood);
+
+DOESNOTEXISTS(D1.1):subject(Set_Obesity),predicate(Process_Set),object(No_Child);
+
+EXISTS(D2):predicate(Process_Set),object(Childhood);
+
+#Just added. for sibutramine
+EXISTS(D3):subject(Set_Obesity),predicate(Process_Set),object(Adulthood);
+
+DOESNOTEXISTS(D3.1):subject(Set_Obesity),predicate(Process_Set),object(No_Adult);
+
+EXISTS(E):predicate(Decrease),object(Risk_Factor);
+
+EXISTS(E1):predicate(Decrease),object(Set_Obesity);
+
+EXISTS(E1.1):subject(Sibutramine_Set),predicate(Decrease),object(Set_Obesity);
+
+EXISTS(E2):predicate(Decrease),object(Atherosclerosis_Set);
+
+EXISTS(E3):predicate(Decrease),object(Cardiovascular_Disease_Set);
+
+EXISTS(F):subject(Organ_Set),predicate(Location_Set),object(Damage_Set);
+
+EXISTS(G1):subject(Cardiovascular_Disease_Set),predicate(Process_Set),object(Childhood);
+
+DOESNOTEXISTS(G1.1):subject(Cardiovascular_Disease_Set),predicate(Process_Set),object(No_Child);
+
+EXISTS(G2):subject(Cardiovascular_Disease_Set),predicate(Process_Set),object(Adulthood);
+
+EXISTS(H1):subject(Set_Obesity),predicate(Process_Set),object(Race_Ethnic_Geo);
+
+EXISTS(H2):predicate(Process_Set),object(Race_Ethnic_Geo);
+
+
+# Rules by question type
+
+RULE(1a):A1,A1.1;
+
+RULE(2a):A1,A1.1,D1,D1.1|A1,A1.1,C1|A1,A1.1,C2|D1,D1.1,C1|D1,D1.1,C2;
+
+# check this rule later. It seems to be  fine. I revised because I cannot have D.2 in for this type
+# It is too restrictive to restrict adults in a question that asks about adults
+#RULE(3a):A1,D1,D1.1|A2,D1,D1.1|A1,C1|A1,C2|D1,D1.1,C1|D1,D1.1,C2; 
+
+# the predispose part is dangerous for the adults
+#RULE(3a):A1,D1|A2,D1|A1,C1|A1,C2|D1,C1|D1,C2;
+
+RULE(3a):D1,A2;
+
+
+
+RULE(12a):E2,D1,D1.1|E1,A1,A1.1;
+
+RULE(12c):E2,D1|E1,A1|D1,A2,E1|D1,A2,E2;
+
+# This class will retrieve few citations (atherosclerosis related target organ damage)
+RULE(1b):A1,A1.1,F;
+
+RULE(9e):G1,D1|G2,D1|G1,C1|G1,C2|D1,C3|D1,C4;
+
+
+RULE(12e):E3,D1|E1,G1|D1,G2,E1|D1,G2,E3;
+
+# Two comments: 
+# 1 - Maybe allow ethnics to be the argument of any predicate not only Process_of. 
+# 2 - Now I have rule (X Process_Of Childhood (D2), Obesity Process_of Race_Ethnic_Geo (H1)). Not sure
+
+RULE(5a):D1,H2|D2,H1;
+
+RULE(10):E1,D1,D1.1; 
+
+RULE(13a):E1,D1,D1.1;
+
+RULE(15s):E1.1,D3,D3.1;
+
+

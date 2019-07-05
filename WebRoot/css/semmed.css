@@ -1,0 +1,541 @@
+body{
+	background-color: rgb(120,120,160);
+}
+
+div.abstract {
+	padding: 10px;	
+	border-style: outset;
+	border-color: rgb(100,100,200);
+	background: white;
+	overflow: auto;
+	position:  fixed;
+	top: 20px;
+	right: 20px;
+	width: 400px;
+	max-height: 600px;	
+	text-align: justify;
+}
+
+h1.abstract{
+	font-size:18px;
+		
+}
+
+a.abstract{
+	float:right;
+}
+
+.tabs {
+	list-style: none;
+	margin-left: 20px;	
+}
+
+.tabs a{
+	background-image: url('../img/r.gif');
+	background-position:top right;
+    background-repeat:no-repeat;
+    margin-left:10px;
+}
+
+.tabs a:hover{
+	color:black;	
+}
+
+.left{
+   background-image: url('../img/l.gif');
+   background-repeat: no-repeat;
+  padding-right: 1px;
+   
+}
+
+.center{
+   background-image: url('../img/c.gif');
+   background-repeat: repeat-x;
+   margin-right:10px;
+   color:rgb(245,245,250);
+}
+
+.tabs li {
+	float: left;	
+}
+
+
+.tabLink{
+/*	background-image: url('../img/leftCorner.gif');
+	background-repeat: no-repeat;*/
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+.searchResults{
+	border-style:ridge;	
+	margin-top:35px;
+}
+
+table#pubmed {
+	font-size: 1em;
+}
+
+#pubmed th {
+	background: rgb(170, 170, 220);
+}
+
+#pubmed td {
+	padding: 5px;
+}
+
+th {
+	font-weight: bold;
+	text-align: left;
+}
+
+td {
+	font-size: 1em;
+}
+
+code {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;
+	white-space: pre;
+}
+
+/*input, select, textarea {
+	font-size:1em; 
+	font-family: arial, helvetica, verdana, sans-serif; 
+	margin: 0;
+	padding: 2px;
+}*/
+input,select {
+	vertical-align: middle;
+}
+
+textarea {
+	width: 200px;
+	height: 8em;
+}
+
+input.check {
+	border: none;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+input.radio {
+	border: none;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+input.file {
+	height: auto;
+	width: 250px;
+}
+
+input.readonly {
+	background: transparent;
+	border: none;
+}
+
+input.button {
+	width: 10em;
+	border: 1px solid black;
+	background-color: #ddd;
+}
+
+input.image {
+	border: none;
+	width: auto;
+	height: auto;
+}
+
+form div.submit {
+	margin: 1em 0;
+}
+
+form div.submit input {
+	height: 2em;
+	width: 15em;
+}
+
+a,a:link,a:active {
+	color: blue;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: purple;
+	background-color: transparent;
+}
+
+a:hover {
+	color: black;
+	/*background-color: black;
+	text-decoration: none;*/
+}
+
+#container {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 76%;
+	line-height: 1em;
+	background: lightGrey;
+}
+
+#header { /*	height:%20;  */
+	margin: 0;
+	padding: 2em 1em;
+	color: white;
+	background: black;
+	text-align: left;
+}
+
+#headertext {
+	font-size: 0.8em;
+}
+
+#footer {
+	margin: 0;
+	text-align: center;
+	padding: 1em;
+}
+
+#footer a,a:link,a:active {
+	font-size: 0.8em;
+}
+
+#topnav {
+	margin: 0;
+	padding: 0 0 0 1em;
+	font-size: 1.1em;
+}
+
+#topnav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	line-height: 1em;
+}
+
+#topnav li {
+	display: block;
+	margin: 0;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: auto;
+	border-right: 1px solid #aaa;
+}
+
+#topnav a,#topnav a:link,#topnav a:active,#topnav a:visited {
+	color: black;
+	display: block;
+	width: auto;
+	float: left;
+	text-decoration: none;
+	background: white;
+	margin: 0;
+	padding: .4em 2em;
+	font-weight: bold;
+}
+
+/* hide from IE Mac \*/
+#topnav a {
+	float: none;
+}
+
+/* end hide */
+#topnav a:hover {
+	text-decoration: underline;
+}
+
+#topnav strong {
+	display: block;
+	color: white;
+	background: black;
+}
+
+#topnav strong a,#topnav strong a:link,#topnav strong a:active,#topnav strong a:visited,#topnav strong a:hover
+	{
+	color: black;
+	background: lightGrey;
+}
+
+#content {
+/*
+	clear: both;
+	*/
+	/*	background:lightGrey; */
+/*
+	background: white;
+	margin: 50px;
+	max-width: 120em;
+	padding: 1em 1em;
+*/	
+	background: rgb(250,250,255);
+	border: thin #000000 solid;
+	margin-top: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px;
+
+}
+
+#displaytag table {
+	width: 100%;
+	/*color: #212424;*/
+	margin: 0 0 1em 0;
+	/*font: 80%/150% "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Lucida, Helvetica, sans-serif;*/
+}
+
+#displaytag table,#displaytag tr,#displaytag th,#displaytag td {
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#displaytag thead { /*background: #524123; */
+	background: black;
+}
+
+#displaytag thead tr th {
+	padding: 1em 0;
+	text-align: center;
+	color: #FAF7D4;
+	border-bottom: 3px solid #A5D768;
+}
+
+#displaytag tfoot {
+	color: #fff;
+	background: #524123;
+}
+
+#displaytag tfoot tr th,#displaytag tfoot tr td {
+	padding: .2em .6em;
+	border-top: 2px solid #A5D768;
+}
+
+#displaytag tfoot tr th {
+	
+}
+
+#displaytag tfoot tr td {
+	text-align: right;
+}
+
+/* BODY */
+#displaytag tbody tr td {
+	background: #DDF0BD url(bg_cell.gif) no-repeat top left;
+}
+
+#displaytag tbody tr.odd td {
+	background-color: #D0EBA6;
+}
+
+#displaytag tbody tr td:hover,#displaytag tbody tr.odd td:hover {
+	background: #c5e894;
+}
+
+#displaytag tbody tr th,#displaytag tbody tr td {
+	padding: 0.1em 0.4em;
+	border: 1px solid #a6ce39;
+}
+
+#displaytag tbody tr th {
+	padding-right: 1em;
+	text-align: right;
+	font-weight: normal;
+	background: #c5e894 url(bg_cell.gif) no-repeat top left;
+	text-transform: uppercase;
+}
+
+#displaytag tbody tr th:hover {
+	background: #D0EBA6;
+}
+
+/* LINKS */
+#displaytag table a {
+	color: #854400;
+	text-decoration: none;
+}
+
+#displaytag table a,a:link,a:visited {
+	font-size: 1em;
+}
+
+#displaytag table a:hover {
+	text-decoration: underline;
+}
+
+/* PubMed Limits */
+.mbar {
+	width: 650px;
+	font: 13px 'Lucida Grande', Geneva, Verdana, Arial, sans-serif;
+	margin: 0 0 10px 0;
+}
+
+.mbar .box {
+	background-color: white;
+	border: 1px solid #a1a5a9;
+	padding: 1px;
+	margin: 0px;
+}
+
+.mbar .box h4       , .toptable {
+	border-bottom: 1px solid #a1a5a9;
+	padding: 5px;
+	background: #f2f2f2;
+	margin: 0px;
+	font-size: 13px;
+	background:
+		url(http://www.ncbi.nlm.nih.gov/entrez/query/PubMed/gifs/whbg.gif);
+	color: #333;
+	padding-bottom: 3px;
+	font-weight: bold;
+}
+
+.mbar .box h5 {
+	font-size: 95%;
+	margin: 6 1 1 5;
+	color: #345371;
+}
+
+div.inputlist {
+	background: #F4F4F4;
+	border: solid 0px #E3E3E3;
+	margin: 0px;
+	padding: 10px;
+}
+
+.boxodd {
+	padding: .5em;
+}
+
+.td-separator {
+	background: #E3E3E3;
+	width: 1px;
+}
+
+.radio_authors {
+	font-family: Verdana, Geneva, Sans-Serif;
+	font-size: 70%;
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 3em;
+	background: white;
+	line-height: 2em;
+}
+
+.ev h1 {
+	font-family: Verdana, Geneva, Sans-Serif;
+	font-size: 75%;
+	text-align: left;
+	padding-left: 5px;
+	padding: .5em 0em .5em .5em;
+	font-weight: bold;
+	background: #E3E3E3;
+	margin: 0;
+}
+
+.sbar {
+	width: 300px;
+	font: 13px 'Lucida Grande', Geneva, Verdana, Arial, sans-serif;
+	margin-left: 3%;
+}
+
+.sbar .box {
+	background-color: white;
+	border: 1px solid #a1a5a9;
+	padding: 1px;
+	margin: 0 0 1.25em 0;
+}
+
+.sbar .box h4 {
+	border-bottom: 1px solid #a1a5a9;
+	padding: 5px;
+	background: #f2f2f2;
+	margin: 0px;
+	font-size: 13px;
+	background:
+		url(http://www.ncbi.nlm.nih.gov/entrez/query/PubMed/gifs/whbg.gif);
+	color: #333;
+}
+
+.sbar .box h5 {
+	font-size: 95%;
+	margin: 6 1 1 5;
+	color: #345371;
+}
+
+div.checklist {
+	height: 200px;
+	background: #F3F5F7;
+	overflow: auto;
+	border: solid 0px #369;
+	margin: 1 0 1 0;
+	padding: 1 1 0 1;
+}
+
+div.checklist .odd {
+	background-color: #F4F4F4;
+}
+
+div.checklist .odd_selected {
+	background-color: #F4F4F4;
+	font-weight: bold
+}
+
+div.checklist .ev {
+	background-color: white;
+}
+
+div.checklist .ev_selected {
+	background-color: white;
+	font-weight: bold
+}
+
+div.checklistSmall {
+	height: 30px;
+	background: #F3F5F7;
+	border: solid 0px #369;
+	margin: 1 0 0 0;
+	padding: 6 1 0 1;
+}
+
+div.checklistSmall .odd {
+	background-color: #F4F4F4;
+	margin: 1 0 5 0;
+}
+
+.citcheckbox {
+	font-family: Verdana, Geneva, Sans-Serif;
+	font-size: 13px;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.citcheckbox input {
+	top: 3px;
+}
+
+img.pin {
+	float: right;
+	margin: -1 0 2 1;
+}
+
+.style1 {
+	margin: 10px;
+}
+
+.HeaderTitle {
+	font-family: "Estrangelo Edessa";
+	font-size: 40px;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	color: #FFFFFF;
+}

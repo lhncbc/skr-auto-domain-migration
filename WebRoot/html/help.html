@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Semantic MEDLINE Prototype - Help</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link href="/SemMedDemo/css/semmed.css" rel="stylesheet" type="text/css"> 
+	    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  	<div id="help">
+	<h2>SEMANTIC MEDLINE WEBSITE PAGES</h2>
+	<h3 id="search">SEARCH PAGE</h3>
+	<p>After you select the MEDLINE search you wish to run, click the Search button. Clicking the Reset button erases all previously-set search options.
+	<p>The MEDLINE search results are displayed at the bottom of the Search page. MEDLINE results appear as a brief display of the PMID (PubMed Unique Identifier) and citation title. Clicking on the PMID or the title takes you directly to an AbstractPlus display of the citation in PubMed. Clicking on the PMID column header sorts the PMIDs in ascending or descending numeric order. 
+	<p>Search results are viewable in groups of 20. You can navigate through the search results by clicking the [First/Prev] group of 20 numbers [1,2,3,4,5.][Next/Last] options.
+	<p>Click the Summarize tab to begin linguistic processing of the selected MEDLINE search results. 
+
+	<h3 id="summary">SUMMARIZATION PAGE</h3>
+	<p>The top of the Summarize page shows a brief description of search parameters from the current session, including Search Term, Source, Dates, and the number of predications extracted from the MEDLINE citations.
+	<p>A predication is a formal representation of a relationship asserted in text. A predication is a triple consisting of two arguments joined by a relation. For example, the predication "Aspirin-TREATS-Headache" has arguments "Aspirin" and "Headache," and relation "TREATS."
+	<p>Summarization is a linguistic process that extracts key information (predications) from the text (title and abstract) of MEDLINE citations. Extracted information centers around a main topic and is represented as predications visualized as a graph.
+	<p>You can specify Summarization Options for your particular interests.  Summary Type specifies the point of view of the summarization process and determines the kind of information contained in the summary. Summary Types available are:  Treatment of Disease, Substance Interactions, Diagnosis, and Pharmacogenomics.  The default is Treatment of Disease.   
+	<p>Treatment of Disease concentrates on the use of therapeutic interventions (drugs and procedures) for disorders.  Substance Interactions refers to how substances (including drugs) affect other substances and relevant diseases.  Diagnosis highlights procedures for identifying diseases by associated  signs and symptoms.  Pharmacogenomics refers to how genes affect a person’s response to drugs. Pharmacogenomics combines pharmacology (the science of drugs) and genomics (the study of genes and their functions) to develop effective, safe medications and doses tailored to a person’s genetic makeup.
+	<p>The second Summarization Option is a checkbox to “Keep only the most frequent predications.”   You can leave the checkbox on (default) or turn it off by unclicking the green checkmark. This will omit less frequently occurring predications from the summary.   Keeping only the most frequent predications (with the box checked) helps focus the summary.
+	<p>The final Summarization Option is to select the central concept of the summary. This is chosen from a list of arguments from all predications in the summary. This list appears in descending order of frequency of occurrence and changes depending on the Summary Type specified. 
+	<p>Click the Summarize and Visualize button to display the graph representing the summarized information.	
+
+	<h3 id="window">MULTI-PANEL WINDOW</h3>
+	<p>The graph appears as one of the panels of a multi-panel window at the bottom of the Summarize page.  A summary statement indicating how many predications (including unique predications) were extracted from the MEDLINE citations processed appears above the window.  The window provides information about the graph as well as search and navigation facilities. 
+	<h4>Graph Info:</h4>
+	<p>Click the Graph Info box to display statistics about the graph.  A small pop up box appears showing counts for Concept (argument), Predication (relation), Visible Concept, and Visible Predication.  Invisible arguments and relations result from hiding predications in the graph. (See Relations Panel below.)
+	<h4>Search Concept:</h4>
+	<p>Type in an argument (or substring) and press enter to locate an argument in the graph.   If found, the argument will be highlighted in red.  
+	<h4>Zoom:</h4>
+	<p>Zoom is a horizontal slidebar that spreads out the graph so you have more room to navigate.  Move the slide bar to the right to spread out; move to the left to collapse.
+	<h4>Stop:</h4>
+	<p>Click the Stop button to freeze graph. This is useful when large graphs are displayed.
+	
+	<h3 id="panel">PANELS</h3>
+	<p>The 4 panels of the window are:  the Graph  (main panel), Citation (below the Graph), the Relations (upper right), and Information (lower right).
+	<h4>Graph Panel</h4>
+	<p>The graph contains the predications of the summary. Nodes represent arguments, and arcs represent relations. The central concept of the summary appears as a node with text in red. Nodes are colored-coded into 15 high-level groups representing biomedical categories such as Chemicals and Drugs and Disorders (Figure 1).
+	<table class="image">
+	<tr><td><img src="/SemMedDemo/images/SM_colors.gif" alt="High-Level Groups for Concepts"/></td></tr>
+	<tr><td class="caption">Figure 1. High-Level Groups for Concepts</td></tr>
+	</table>	
+	<p>Right click on a node to display active links to other National Library of Medicine resources, such as the Unified Medical Language System Metathesaurus, Entrez Gene, OMIM (Online Mendelian Inheritance in Man), and  GHR (Genetics Home Reference).  To use these links, allow pop-ups in your Web browser.  Links are unavailable if grayed out. Clicking on a node also causes information about it to appear in the Information Panel (see below). 
+	<p>The arcs representing relations between arguments are color-coded to indicate the name of the relation (see Relations Panel below). The direction towards which the arc points indicates the direction of the relation between the two arguments. Clicking on an arc causes it to change color to black indicating that you are navigating from one predication to another.  
+	<p>Right-click on an arc and the Display Citations button appears.  Left-click on the Display Citations button and the Citation panel (below Graph panel) shows the sentence from the MEDLINE citation that generated the predication.
+	<h4>Citation Panel</h4>
+	<p>The Citation panel contains the sentence in a  MEDLINE citation from which a selected  relation was extracted. The sentence is highlighted in yellow. Information about the citation includes PMID, date of publication (DP), Title (TI), and Abstract (AB).  The PMID is hyperlinked to the citation in PubMed.  
+	<h4>Relations Panel</h4>
+	<p>The Relations panel provides a legend for the colors of the arcs representing names of relations in the graph. (See Relations Definitions below.) You can toggle relations on and off in the graph by clicking the check box in the Relations panel. If you toggle a relation off, the corresponding arc in the graph disappears along with associated nodes.  A little red box in the upper right hand corner of a node indicates the number of hidden nodes. 
+	<h4>Information Panel</h4> 
+	<p>The Information panel (lower right panel) changes as you click between nodes (arguments) and arcs (relations) to display linguistic and statistical information about the active argument or predication.  
+
+	<h3 id="defs">RELATION DEFINITIONS</h3>
+	<p><b>ADMINISTERED_TO:</b> To be given to an entity, when no assertion is made that the substance is being given as treatment. 
+	<p><b>AFFECTS:</b> Produces a direct effect on. Implied here is the altering or influencing of an existing condition, state, situation, or entity. This includes has a role in, alters, influences, predisposes, catalyzes, stimulates, regulates, depresses, impedes, enhances, contributes to, leads to, and modifies.
+	<p><b>ASSOCIATED_WITH:</b> Has a significant or salient relationship to.
+	<p><b>AUGMENTS:</b> To expand or stimulate a process.  
+	<p><b>CAUSES:</b> Brings about a condition or an effect. Implied here is that an agent, such as for example, a pharmacologic substance or an organism, has brought about the effect. This includes induces, effects, evokes, and etiology.
+	<p><b>COEXISTS_WITH:</b> Occurs at the same time as, together with, or jointly. This includes is co-incident with, is concurrent with, is contemporaneous with, accompanies, coexists with, and is concomitant with.
+	<p><b>CONVERTS_TO:</b> To change in form from arg1 to arg2, (both substances)
+	<p><b>COMPLICATES:</b> Causes to become more severe or complex or results in adverse effects.
+	<p><b>DIAGNOSES:</b> Distinguishes or identifies the nature or characteristics of.
+	<p><b>DISRUPTS:</b> Alters or influences an already existing condition, state, or situation. Produces a negative effect on.
+	<p><b>INHIBITS:</b>  Decreases, limits, or blocks the action or function of something.
+	<p><b>INTERACTS_WITH:</b> Acts, functions, or operates together with.
+	<p><b>ISA:</b> The basic hierarchical link in the UMLS Semantic Network. If one item “isa” another item then the first item is more specific in meaning than the second item.
+	<p><b>LOCATION_OF:</b> The position, site, or region of an entity or the site of a process.
+	<p><b>MANIFESTATION_OF:</b> That part of a phenomenon which is directly observable or concretely or visibly expressed, or which gives evidence to the underlying process. This includes expression of, display of, and exhibition of.
+	<p><b>PART_OF:</b> Composes, with one or more other physical units, some larger whole. This includes component of, division of, portion of, fragment of, section of, and layer of.
+	<p><b>PREDISPOSES:</b> To be involved or be a risk to a disorder, pathology, or condition. The agent such as substance or finding is not explicitly involved in the etiology of the disorder, pathology, or condition.
+	<p><b>PREVENTS:</b> Stops, hinders or eliminates an action or condition.
+	<p><b>PROCESS_OF:</b> Action, function, or state of.
+	<p><b>STIMULATES:</b> Increases or facilitates the action or function of something
+	<p><b>TREATS:</b> Applies a remedy with the object of effecting a cure or managing a condition.
+  </div>
+  </body>
+</html>

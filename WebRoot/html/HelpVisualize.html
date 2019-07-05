@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Semantic MEDLINE - Help: Visualize</title>
+
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+	<link href="/SemMedDemo/css/semmed.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+  	<div id="help">
+  		<h3>Visualize:</h3>
+  	<p>When the button "Visualize" is clicked, a graph is shown in the visualization page. </p>
+<p>The graph contains the predications of the summary. Nodes represent arguments, and arcs represent relations. The central concept of the summary appears as a node with text in red. Nodes are colored-coded into 15 high-level groups representing biomedical categories such as Chemicals and Drugs and Disorders (Figure 1).
+	<p>
+	<table>
+	<tr><td><img src="/SemMed/img/SM_colors.gif" border="1" alt="High-Level Groups for Concepts"/></td></tr>
+	<tr><td align="center">Figure 1. High-Level Groups for Concepts</td></tr>
+	</table>
+	<p>Right click on a node to display active links to other National Library of Medicine resources, such as the Unified Medical Language System Metathesaurus, Entrez Gene, OMIM (Online Mendelian Inheritance in Man), and  GHR (Genetics Home Reference).  To use these links, allow pop-ups in your Web browser.  Links are unavailable if grayed out. Clicking on a node also causes information about it to appear in the Information Panel (see below).
+	<p>The arcs representing relations between arguments are color-coded to indicate the name of the relation (see Relations Part below).
+	The direction towards which the arc points indicates the direction of the relation between the two arguments.
+	<h3 id="defs">RELATION DEFINITIONS</h3>
+	<p><b>ADMINISTERED_TO:</b> To be given to an entity, when no assertion is made that the substance is being given as treatment.
+	<p><b>AFFECTS:</b> Produces a direct effect on. Implied here is the altering or influencing of an existing condition, state, situation, or entity. This includes has a role in, alters, influences, predisposes, catalyzes, stimulates, regulates, depresses, impedes, enhances, contributes to, leads to, and modifies.
+	<p><b>ASSOCIATED_WITH:</b> Has a significant or salient relationship to.
+	<p><b>AUGMENTS:</b> To expand or stimulate a process.
+	<p><b>CAUSES:</b> Brings about a condition or an effect. Implied here is that an agent, such as for example, a pharmacologic substance or an organism, has brought about the effect. This includes induces, effects, evokes, and etiology.
+	<p><b>COEXISTS_WITH:</b> Occurs at the same time as, together with, or jointly. This includes is co-incident with, is concurrent with, is contemporaneous with, accompanies, coexists with, and is concomitant with.
+	<p><b>CONVERTS_TO:</b> To change in form from arg1 to arg2, (both substances)
+	<p><b>COMPLICATES:</b> Causes to become more severe or complex or results in adverse effects.
+	<p><b>DIAGNOSES:</b> Distinguishes or identifies the nature or characteristics of.
+	<p><b>DISRUPTS:</b> Alters or influences an already existing condition, state, or situation. Produces a negative effect on.
+	<p><b>INHIBITS:</b>  Decreases, limits, or blocks the action or function of something.
+	<p><b>INTERACTS_WITH:</b> Acts, functions, or operates together with.
+	<p><b>ISA:</b> The basic hierarchical link in the UMLS Semantic Network. If one item "isa" another item then the first item is more specific in meaning than the second item.
+	<p><b>LOCATION_OF:</b> The position, site, or region of an entity or the site of a process.
+	<p><b>MANIFESTATION_OF:</b> That part of a phenomenon which is directly observable or concretely or visibly expressed, or which gives evidence to the underlying process. This includes expression of, display of, and exhibition of.
+	<p><b>PART_OF:</b> Composes, with one or more other physical units, some larger whole. This includes component of, division of, portion of, fragment of, section of, and layer of.
+	<p><b>PREDISPOSES:</b> To be involved or be a risk to a disorder, pathology, or condition. The agent such as substance or finding is not explicitly involved in the etiology of the disorder, pathology, or condition.
+	<p><b>PREVENTS:</b> Stops, hinders or eliminates an action or condition.
+	<p><b>PROCESS_OF:</b> Action, function, or state of.
+	<p><b>STIMULATES:</b> Increases or facilitates the action or function of something
+	<p><b>TREATS:</b> Applies a remedy with the object of effecting a cure or managing a condition.
+
+	<p><a href="javascript:self.close()">Close window</a>
+  	</div>
+  </body>
+  <script language="javascript"  type="text/javascript">
+	function popup(url) {
+		newwindow=window.open(url,'name','height=450,width=350, screenX=550, screenY=350');
+		if (window.focus) {newwindow.focus()}
+		return false;
+	}
+  </script>
+</html>

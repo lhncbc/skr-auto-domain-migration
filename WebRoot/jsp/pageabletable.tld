@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<!-- a tag library descriptor -->
+<taglib>
+	<!-- after this the default space is
+		"http://java.sun.com/j2ee/dtds/jsptaglibrary_1_2.dtd"
+	-->
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>csajsp</shortname>
+	<uri></uri>
+	<info>
+		A tag library for SemMed.
+	</info>
+	<tag>
+		<name>index</name>
+		<tagclass>gov.nih.nlm.semmed.tags.TablePager</tagclass>
+		<bodycontent>EMPTY</bodycontent>
+		<info>Inserts an index to the pages of a table</info>		
+		<attribute>
+			<name>currentPage</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>count</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>link</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>max</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>						
+	</tag>
+</taglib>

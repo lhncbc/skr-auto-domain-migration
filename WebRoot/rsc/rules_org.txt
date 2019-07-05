@@ -1,0 +1,64 @@
+SET(Childhood):Child|School child|Youth|Adolescent|Adolescents, Female|Adolescents, Male|Boys|Girls;
+
+SET(Adulthood):Patients|Adult|Male population group|Woman|Young adult;
+
+SET(Target_Population):Childhood|Adulthood;
+
+#this is the same as Childhood, but I left it as an example
+SET(No_Child):MINUS(Target_Population,Childhood);
+
+SET(Atherosclerosis_Set):Atherosclerosis|Coronary atherosclerosis|Carotid atherosclerosis;
+
+SET(Set_Obesity):Obesity|Overweight|Weight Gain;
+
+SET(Risk_Factor):Set_Obesity|Metabolic syndrome|Diabetes Mellitus|Inflammation;
+
+SET(Process_Set):PROCESS_OF;
+
+SET(PRED1):PREDISPOSES|AFFECTS|COEXISTS_WITH;
+
+SET(Decrease):TREATS|PREVENTS|AFFECTS;
+
+SET(Arthero_Risk):Artherosclerosis_Set|Risk_Factor;
+
+
+
+
+EXISTS(A1):subject(Atherosclerosis_Set),predicate(Process_Set),object(Childhood);
+
+DOESNOTEXISTS(A1.1):subject(Atherosclerosis_Set),predicate(Process_Set),object(No_Child);
+
+EXISTS(A2):predicate(Process_Set),object(Adulthood);
+
+EXISTS(B):subject(Atherosclerosis_Set),predicate(Process_Set),object(Target_Population);
+
+EXISTS(C):subject(Arthero_Risk),predicate(PRED1),object(Arthero_Risk);
+
+EXISTS(C.1):subject(Set_Obesity),predicate(PRED1),object(Atherosclerosis_Set);
+
+EXISTS(C.2):subject(Atherosclerosis_Set),predicate(PRED1),object(Set_Obesity);
+
+
+EXISTS(D):subject(Risk_Factor),predicate(Process_Set),object(Target_Population);
+
+EXISTS(D.1):subject(Set_Obesity),predicate(Process_Set),object(Childhood);
+
+DOESNOTEXISTS(D.2):subject(Set_Obesity),predicate(Process_Set),object(No_Child);
+
+EXISTS(E):predicate(Decrease),object(Risk_Factor);
+
+EXISTS(E.1):predicate(Decrease),object(Set_Obesity);
+
+
+#1a
+RULE(0):A1,A1.1;
+
+#2a
+RULE(1):A1,A1.1,D.1,D.2|A1,A1.1,C.1|A1,A1.1,C.2|D.1,D.2,C.1|D.1,D.2,C.2;
+
+#10
+RULE(2): E.1, D.1, D.2; 
+
+#13a
+RULE(3): E.1, D.1, D.2; 
+

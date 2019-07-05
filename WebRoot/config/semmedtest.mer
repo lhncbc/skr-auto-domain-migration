@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="semmedtest" database="semmedtest" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" />
+  <Tables>
+    <Table name="CONCEPT_SEMTYPE">
+      <Drawing expanded="true" location="53,685" dimensions="257,108" />
+      <Columns>
+        <Column name="CONCEPT_SEMTYPE_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="CONCEPT_ID" primary_key="false" foreign_key="true" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="SEMTYPE" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="varchar" size="4" />
+        </Column>
+        <Column name="NOVEL" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="char" size="1" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="CONCEPT_TRANSLATION">
+      <Drawing expanded="true" location="1080,698" dimensions="285,108" />
+      <Columns>
+        <Column name="CONCEPT_TRANSLATION_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="CONCEPT_ID" primary_key="false" foreign_key="true" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="LANGUAGE" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="varchar" size="10" />
+        </Column>
+        <Column name="TRANSLATION" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="varchar" size="200" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="CONCEPT">
+      <Drawing expanded="true" location="624,682" dimensions="232,149" />
+      <Columns>
+        <Column name="CONCEPT_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="CUI" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="varchar" size="20" />
+        </Column>
+        <Column name="TYPE" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="varchar" size="10" />
+        </Column>
+        <Column name="PREFERRED_NAME" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="varchar" size="200" />
+        </Column>
+        <Column name="GHR" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="varchar" size="250" />
+        </Column>
+        <Column name="OMIM" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="varchar" size="250" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="PREDICATION_ARGUMENT">
+      <Drawing expanded="true" location="46,392" dimensions="296,107" />
+      <Columns>
+        <Column name="PREDICATION_ARGUMENT_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="PREDICATION_ID" primary_key="false" foreign_key="true" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="CONCEPT_SEMTYPE_ID" primary_key="false" foreign_key="true" required="true" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="TYPE" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="char" size="1" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="PREDICATION">
+      <Drawing expanded="true" location="66,65" dimensions="227,89" />
+      <Columns>
+        <Column name="PREDICATION_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="PREDICATE" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="varchar" size="50" />
+        </Column>
+        <Column name="TYPE" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="varchar" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="SENTENCE_PREDICATION">
+      <Drawing expanded="true" location="591,15" dimensions="287,407" />
+      <Columns>
+        <Column name="SENTENCE_PREDICATION_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="SENTENCE_ID" primary_key="false" foreign_key="true" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="PREDICATION_ID" primary_key="false" foreign_key="true" required="true" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="PREDICATION_NUMBER" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="SUBJECT_TEXT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="varchar" size="200" />
+        </Column>
+        <Column name="SUBJECT_DIST" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="SUBJECT_MAXDIST" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="SUBJECT_START_INDEX" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="SUBJECT_END_INDEX" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="SUBJECT_SCORE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="INDICATOR_TYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="varchar" size="10" />
+        </Column>
+        <Column name="PREDICATE_START_INDEX" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="PREDICATE_END_INDEX" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="OBJECT_TEXT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="varchar" size="200" />
+        </Column>
+        <Column name="OBJECT_DIST" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="OBJECT_MAXDIST" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="OBJECT_START_INDEX" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="OBJECT_END_INDEX" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="OBJECT_SCORE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="int unsigned" size="10" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="SENTENCE">
+      <Drawing expanded="true" location="1264,29" dimensions="204,129" />
+      <Columns>
+        <Column name="SENTENCE_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="PMID" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="varchar" size="20" />
+        </Column>
+        <Column name="TYPE" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="varchar" size="2" />
+        </Column>
+        <Column name="NUMBER" primary_key="false" foreign_key="false" required="true" unique="true">
+          <Data type="int unsigned" size="10" />
+        </Column>
+        <Column name="SENTENCE" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="varchar" size="999" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships>
+    <Relationship name="CONCEPT_SEMTYPE_ibfk_1">
+      <Details primary_table="CONCEPT" foreign_table="CONCEPT_SEMTYPE">
+        <PrimaryKeys>
+          <ColumnName name="CONCEPT_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="CONCEPT_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="FK_CONCEPT">
+      <Details primary_table="CONCEPT" foreign_table="CONCEPT_TRANSLATION">
+        <PrimaryKeys>
+          <ColumnName name="CONCEPT_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="CONCEPT_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="PREDICATION_ARGUMENT_ibfk_1">
+      <Details primary_table="PREDICATION" foreign_table="PREDICATION_ARGUMENT">
+        <PrimaryKeys>
+          <ColumnName name="PREDICATION_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="PREDICATION_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="PREDICATION_ARGUMENT_ibfk_2">
+      <Details primary_table="CONCEPT_SEMTYPE" foreign_table="PREDICATION_ARGUMENT">
+        <PrimaryKeys>
+          <ColumnName name="CONCEPT_SEMTYPE_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="CONCEPT_SEMTYPE_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="SENTENCE_PREDICATION_ibfk_1">
+      <Details primary_table="SENTENCE" foreign_table="SENTENCE_PREDICATION">
+        <PrimaryKeys>
+          <ColumnName name="SENTENCE_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="SENTENCE_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="SENTENCE_PREDICATION_ibfk_2">
+      <Details primary_table="PREDICATION" foreign_table="SENTENCE_PREDICATION">
+        <PrimaryKeys>
+          <ColumnName name="PREDICATION_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="PREDICATION_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+  </Relationships>
+</ERDiagram>
+
